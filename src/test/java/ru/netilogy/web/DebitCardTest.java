@@ -49,8 +49,8 @@ public class DebitCardTest {
 
     @Test
     void debitCardTest2() {
-        driver.findElement(By.cssSelector("span[data-test-id=\"name\"] input")).sendKeys("Дмитрий Мамин-Сибиряк");
-        driver.findElement(By.cssSelector("span[data-test-id=\"phone\"] input")).sendKeys("+79135504488");
+        driver.findElement(By.cssSelector("[data-test-id=\"name\"] input")).sendKeys("Дмитрий Мамин-Сибиряк");
+        driver.findElement(By.cssSelector("[data-test-id=\"phone\"] input")).sendKeys("+79135504488");
         driver.findElement(By.cssSelector("[data-test-id=\"agreement\"]")).click();
         driver.findElement(By.className("button_view_extra")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id=\"order-success\"]")).getText();
